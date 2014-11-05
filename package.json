@@ -1,0 +1,35 @@
+{
+  "name": "sumatran-tiger",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomoo Murata",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "css-loader": "^0.9.0",
+    "file-loader": "^0.8.1",
+    "gulp": "^3.8.10",
+    "gulp-clean": "^0.3.1",
+    "gulp-open": "^0.3.0",
+    "gulp-util": "^3.0.1",
+    "html-loader": "^0.2.3",
+    "less": "^1.7.5",
+    "less-loader": "^0.7.7",
+    "style-loader": "^0.8.2",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.4.12",
+    "webpack-dev-server": "^1.6.5"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.0",
+    "director": "^1.2.3",
+    "jquery": "^2.1.1",
+    "marked": "^0.3.2",
+    "stylus-loader": "^0.4.0",
+    "vue": "^0.11.0-rc3"
+  }
+}
