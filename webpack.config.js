@@ -26,7 +26,8 @@ module.exports = {
       { test: /\.woff$/, loader: 'url-loader?mimetype=application/font-woff' },
       { test: /\.ttf$/, loader: 'file-loader' },
       { test: /\.eot$/, loader: 'file-loader' },
-      { test: /\.svg$/, loader: 'file-loader' }
+      { test: /\.svg$/, loader: 'file-loader' },
+      { test: /\.vue$/, loader: 'vue-loader' }
     ]
   },
   plugins: [
