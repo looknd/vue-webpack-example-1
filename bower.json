@@ -1,0 +1,20 @@
+{
+  "name": "sumatran-tiger",
+  "version": "0.0.1",
+  "homepage": "https://github.com/muuran/vue-webpack-example",
+  "authors": [
+    "muuran <muramuramuuran@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "split-pane": "~0.4.0"
+  }
+}

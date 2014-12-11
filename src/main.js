@@ -1,8 +1,9 @@
 var Vue = require('vue')
 var Router = require('director').Router
-var app = new Vue(require('./app.vue'))
+var app = new Vue(require('./app.js'))
 var router = new Router()
 
+// Router settings
 router.on('/', function (page) {
   window.scrollTo(0, 0)
   app.view = 'home-view'
@@ -25,5 +26,11 @@ router.configure({
 })
 
 router.init('/')
+
+// Global directives
+Vue.directive('splitter', require('./directives/splitter.js'))
+
+// Global filters
+Vue.filter('formatDate', require('./filters/format-date.js'))
 
 app.$mount('#app')

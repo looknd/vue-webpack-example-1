@@ -1,0 +1,17 @@
+<form role="form" v-on="submit: setUsername">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">ユーザー名を入力してください</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" placeholder="ユーザー名" v-model="username">
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

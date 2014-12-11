@@ -1,0 +1,30 @@
+<div class="chat" v-splitter="bottom:4em">
+  <div>
+    <ul class="chat-main">
+      <li v-repeat="messages">
+        <div class="chat-main-avatar"><img src="http://dummyimage.com/50x50/666/fff" alt=""></div>
+        <div class="chat-main-body">
+          <div class="chat-main-heading">{{username}} <span>{{date | formatDate}}</span></div>
+          {{message}}
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <form class="chat-form" v-on="submit: sendMessage">
+      <div class="chat-form-input">
+        <div class="form-group">
+          <div class="input-group">
+            <textarea class="form-control" rows="1" v-model="message" v-el="input"></textarea>
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-cog"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-form-submit">
+        <button class="btn btn-block btn-primary" type="submit">送信</button>
+      </div>
+    </form>
+  </div>
+</div>

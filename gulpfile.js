@@ -62,6 +62,6 @@ gulp.task('webpack', function (callback) {
 });
 
 // Production build
-gulp.task('build', function () {
-  gulp.start('clean', 'copy', 'webpack')
+gulp.task('build', ['clean'], function () {
+  gulp.start('copy', 'webpack')
 })
